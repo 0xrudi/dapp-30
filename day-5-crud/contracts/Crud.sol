@@ -17,24 +17,33 @@ contract Crud {
     }
 
     function read(uint id) view public returns(uint, string memory) {
-        //using a for loop to iterate through the users array
-        for(uint i = 0; i < users.length; i++) {
-            // we want to validate that the id value of the element in the array matches to the one that was entered
-            if(users[i].id == id) {
-                return (users[i].id, users[i].name);
-            }
-        }
+        // uses the helper function to locate the record to update
+        i = find(id); 
+        return (users[i].id, users[i].name);
     }
 
     function update(uint id, string memory name) public {
-        for (uint i = 0; i < users.length; i++) {
-            if(users[i].id == id) {
-                users[i].name = name;
-            }
+        // uses the helper function to locate the record to update
+        i = find(id);
+        // uses dot function to update the name for the specific record
+        return(users[i].name = name);
         }
     }
 
     function destroy(uint id) public {
-        delete users[id];
+        // uses the helper function to locate the record to update
+        i = find(id);
+        delete users[i];
+    }
+
+    // below is a helper function to remove redundant code from public functions
+    // this helper function will be internal since it only should be called by the smart contract
+    // using a for loop to iterate through the users array
+    function find(uint id) view internal returns {uint} {
+        for (uint i = 0; i < users.length; i++) {
+            if(users[i].id == id) {
+                return i;
+            }
+        }
     }
 }
