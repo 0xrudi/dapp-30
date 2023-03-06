@@ -14,12 +14,16 @@ How to run each of the project folders
 This inital folder is focused on getting reoriented with the formalities of setting up a smart contract and deploying in remix.
 
 # day 2 - Hello World
+In this simple project, I created my first function to simply return a static value. The function itself is nothing to write home about, but I learned how to connect the function returned value to read on the web page.
 
 # day 3 - Simple Storage
+Today, I created a new smart contract that allowed me to store an updateable attribute in the smart contract. This was cool because after hooking the smart contract to the webpage, I was able to arbitrarily change the value stored on-chain using a simple user interface.
 
 # day 4 - Advanced Storage
 This project builds off of the previous day with an additional nuance. Within the smart contract, the "data" variable is an array of numbers,  Consequently, upon clicking submit, the entered value will be appended to the array instead of replacing the single value.
 In this project there were some additional achievements made with the front-end portion. Instead of connecting the dapp to the local ganache blockchain instance in the background, I connected the metamask instance directly in the browser to more closely simulate real world interactions. 
 
 # day 5 - CRUD (Create, Read, Update, Delete)
-CRUD is commonly used in database management and here we apply the functionality to smart contracts. Here we begin to use structs for the first time and used that struct as an array.
+CRUD is commonly used in database management and here we apply the functionality to smart contracts. Here I begin to use structs for the first time and used that struct as an array. 
+Over the course of a project, i did a little bit of refactoring and created a helper function to remove redundant loops of code.
+When testing the smart contracts, I used try/catch blocks to perform negative test scenarios (scenarios that should intentionally fail).
