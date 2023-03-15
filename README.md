@@ -27,3 +27,6 @@ In this project there were some additional achievements made with the front-end 
 CRUD is commonly used in database management and here we apply the functionality to smart contracts. Here I begin to use structs for the first time and used that struct as an array. 
 Over the course of a project, i did a little bit of refactoring and created a helper function to remove redundant loops of code.
 When testing the smart contracts, I used try/catch blocks to perform negative test scenarios (scenarios that should intentionally fail).
+
+# day 6 - Ether Wallet
+This project is my first attempt to use solidity for one of it's primary uses, financial transactions. The basic functionality for this contract will be to send, receive, and hold ether.
