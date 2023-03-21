@@ -30,3 +30,8 @@ When testing the smart contracts, I used try/catch blocks to perform negative te
 
 # day 6 - Ether Wallet
 This project is my first attempt to use solidity for one of it's primary uses, financial transactions. The basic functionality for this contract will be to send, receive, and hold ether. For basic utility, I added a security feature that requires withdrawals from the smart contract to be performed by the owner of the contract. In the context of this project, the owner of the contract is the address that deploys the wallet. While this may cause User Experience hurdles in production, this feature is a necessity to prevent any arbitrary user from withdrawing the funds.
+
+For the frontend of this project, I updated the logic to retrieve the contract address to more closely replicate mainnet. In this project, I utilized web3.eth.net.getId() to retrieve the id of the network that is currently selected in the user's metamask instance. This is important because an app may be deployed on several different networks and it is important to retrieve the correct contract based on what the user has picked.
+
+# day 7 - Split Payment
+The use case for this project is building off of the previous wallet project. Imagine a DAO is maintaining their treasury on-chain and has to send payments for various expenses. This project will allow them to send payments to multiple parties within a single transaction. This is useful for instances like payroll, where they make recurring payments to multiple individuals, therefore they can minimize amounts of transactions and costs by combining into one transaction.
