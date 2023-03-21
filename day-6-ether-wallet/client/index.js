@@ -29,13 +29,16 @@ const initWeb3 = () => {
 };
 
 const initContract = async () => {
+  // use web3.eth.net.getId() to return the network ID from Metamask
   const networkId = await web3.eth.net.getId();
+  // pass the network ID to get the contract address for the selected network
   return new web3.eth.Contract(
     EtherWallet.abi, 
     EtherWallet
       .networks[networkId]
       .address
   );
+  // the returned value is stored as the initContract variable
 };
 
 const initApp = () => {
