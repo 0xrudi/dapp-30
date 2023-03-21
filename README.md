@@ -35,3 +35,5 @@ For the frontend of this project, I updated the logic to retrieve the contract a
 
 # day 7 - Split Payment
 The use case for this project is building off of the previous wallet project. Imagine a DAO is maintaining their treasury on-chain and has to send payments for various expenses. This project will allow them to send payments to multiple parties within a single transaction. This is useful for instances like payroll, where they make recurring payments to multiple individuals, therefore they can minimize amounts of transactions and costs by combining into one transaction.
+
+In this project, I used the modifier keyword for the first time to modify behav
