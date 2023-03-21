@@ -29,4 +29,4 @@ Over the course of a project, i did a little bit of refactoring and created a he
 When testing the smart contracts, I used try/catch blocks to perform negative test scenarios (scenarios that should intentionally fail).
 
 # day 6 - Ether Wallet
-This project is my first attempt to use solidity for one of it's primary uses, financial transactions. The basic functionality for this contract will be to send, receive, and hold ether.
+This project is my first attempt to use solidity for one of it's primary uses, financial transactions. The basic functionality for this contract will be to send, receive, and hold ether. For basic utility, I added a security feature that requires withdrawals from the smart contract to be performed by the owner of the contract. In the context of this project, the owner of the contract is the address that deploys the wallet. While this may cause User Experience hurdles in production, this feature is a necessity to prevent any arbitrary user from withdrawing the funds.
