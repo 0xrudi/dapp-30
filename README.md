@@ -36,4 +36,6 @@ For the frontend of this project, I updated the logic to retrieve the contract a
 # day 7 - Split Payment
 The use case for this project is building off of the previous wallet project. Imagine a DAO is maintaining their treasury on-chain and has to send payments for various expenses. This project will allow them to send payments to multiple parties within a single transaction. This is useful for instances like payroll, where they make recurring payments to multiple individuals, therefore they can minimize amounts of transactions and costs by combining into one transaction.
 
-In this project, I used the modifier keyword for the first time to modify behav
+In this project, I used the modifier keyword for the first time to modify access controls for a specific function. This is useful to eliminate redundant code by outsourcing these types of permission logic outside of the functions
+
+For the UI of this project, I went with a lazier way for specifying addresses and amounts. In its current build, I have to enter separate lists for addresses and amounts separated by a comma (,). This isnt the a suitable approach for any production application, but I hope to refactor once I become more knowledgeable about bootstrap and frontend development.
