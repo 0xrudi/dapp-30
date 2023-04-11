@@ -39,3 +39,11 @@ The use case for this project is building off of the previous wallet project. Im
 In this project, I used the modifier keyword for the first time to modify access controls for a specific function. This is useful to eliminate redundant code by outsourcing these types of permission logic outside of the functions
 
 For the UI of this project, I went with a lazier way for specifying addresses and amounts. In its current build, I have to enter separate lists for addresses and amounts separated by a comma (,). This isnt the a suitable approach for any production application, but I hope to refactor once I become more knowledgeable about bootstrap and frontend development.
+
+# day 8 - Deed 
+This is a relatively straightforward smart contract but it enabled a few new skills to be practiced. First, I integrated the use of time into the smart contract to have the functionality of a timelock. The focus of this contract is to allow for a beneficiary of a deed to receive money after some event, perhaps the passing of a grandparent. Within the smart contract, we could use this timelock feature to only allow the beneficiary to receive the money after a certain date, like an 18th birthday. 
+
+This is an interesting use case, because it really minimizes the amount of trust needed to ensure the beneficiary can receive their assets. They do not need to rely on a bank or a guardian to safeguard their assets. However, it would require them to have knowledge of the deed, and the basic understanding of how to interact with a smart contract/use a wallet.
+
+# day 9 - Deed Multi-Payouts
+This project builds off of the bones of the previous project, and extending its functionality to allow for multiple payments to be made from a smart contract. The use for this is to enable recurring payments instead of a lump sum withdrawal. 
