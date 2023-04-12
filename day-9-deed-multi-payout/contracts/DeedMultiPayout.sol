@@ -6,9 +6,9 @@ contract DeedMultiPayout {
     uint public earliest;
     uint public amount;
     // using the new constant keyword for hardcoding the amount of times the deed can be withdrawn from
-    uint constant public PAYOUTS = 10;
+    uint constant public PAYOUTS = 4;
     // Interval will be the hardcoded time period that must elapse between payouts
-    uint constant public INTERVAL = 10;
+    uint constant public INTERVAL = 1;
     uint public paidPayouts;
 
     constructor (
