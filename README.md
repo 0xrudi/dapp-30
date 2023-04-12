@@ -46,4 +46,6 @@ This is a relatively straightforward smart contract but it enabled a few new ski
 This is an interesting use case, because it really minimizes the amount of trust needed to ensure the beneficiary can receive their assets. They do not need to rely on a bank or a guardian to safeguard their assets. However, it would require them to have knowledge of the deed, and the basic understanding of how to interact with a smart contract/use a wallet.
 
 # day 9 - Deed Multi-Payouts
-This project builds off of the bones of the previous project, and extending its functionality to allow for multiple payments to be made from a smart contract. The use for this is to enable recurring payments instead of a lump sum withdrawal. 
+This project builds off of the bones of the previous project, and extending its functionality to allow for multiple payments to be made from a smart contract. The use for this is to enable recurring payments instead of a lump sum withdrawal. A new framework implemented for this contract is the use of a ternary operator. This was used as a validation check to ensure we do not run around our maximum amount of payouts.
+
+The unit test for this project included the base set of tests from the previous project, as well as some new ones to capture to new functionality
